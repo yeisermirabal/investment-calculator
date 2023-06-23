@@ -1,0 +1,144 @@
+form {
+    padding: 1rem;
+    max-width: 50rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.form-controls {
+    position: relative;
+    width: calc(100% - 40px);
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+    }
+
+    &:before {
+        left: -20px;
+        border-width: 0 0 50px 20px;
+        border-color: transparent transparent #262228 transparent;
+    }
+
+    &:after {
+        right: -20px;
+        border-width: 50px 20px 0 0;
+        border-color: #262228 transparent transparent transparent;
+    }
+}
+
+input {
+    width: 100%;
+    background: #262228;
+    color: #fff;
+    border: none;
+    padding: 17px 40px;
+    font-size: 14px;
+    font-weight: 500;
+    &:focus {
+        outline: 0;
+    }
+}
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+button {
+    border: none;
+    color: #1c1121;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 17px 15px;
+    margin-left: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: .3s linear;  
+    background: #ffffff;  
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        transition: .3s linear;
+    }
+    
+    &:before {
+        left: -20px;
+        border-width: 0 0 53px 20px;
+        border-color: transparent transparent #ffffff transparent;              
+    }
+
+    &:after {
+        right: -20px;
+        border-width: 53px 20px 0 0;
+        border-color: #ffffff transparent transparent transparent;        
+    }
+
+    &.primary {
+        background: #e4a101;
+        &:before {
+            border-color: transparent transparent #e4a101 transparent;              
+        }
+    
+        &:after {
+            border-color: #e4a101 transparent transparent transparent;        
+        }
+        &:hover {
+            &:before {
+                border-color: transparent transparent #ffffff transparent;              
+            }
+        
+            &:after {
+                border-color: #ffffff transparent transparent transparent;        
+            }
+        }
+    }
+
+    &:hover {
+        background: #fff;
+        color: #e4a101;
+    }
+}
+
+@media(min-width: 768px) {
+    .form-group {
+        flex-direction: row;
+        gap: 3rem;
+    }
+    .form-actions {
+        flex-direction: row;
+        width: 100%;        
+        gap: 3rem;
+    }
+    button {
+        min-width: 10rem;
+        width: auto;
+        margin: 0;
+    }
+}
