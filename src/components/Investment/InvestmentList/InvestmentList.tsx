@@ -1,9 +1,22 @@
 import React from "react";
 
+/**Components */
+import InvestmentItem from "../InvestmentItem";
+
+/**Types */
+import { IInvestmentCalculated, InvestmentListProps } from "../../../global/utils/Types";
+
 /*Styles */
 import './InvestmentList.style.scss'
 
-const InvestmentList = () => {
+
+
+const InvestmentList = ({ items, initialInvestment }: InvestmentListProps) => {
+
+    if (!items.length) {
+        return <div className="investment-list--empty">No investment calculated yet.</div>;
+    }
+
     return (
         <div className="investment-list--container">
             <div className="investment-list--wrapper">
@@ -18,13 +31,12 @@ const InvestmentList = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>$10000</td>
-                            <td>$10000</td>
-                            <td>$10000</td>
-                            <td>$10000</td>
-                            <td>$10000</td>
-                        </tr>
+                        {items.map((item: IInvestmentCalculated, index) => {
+                            return (
+                                <InvestmentItem key={index} data={item} initialInvestment={initialInvestment} />
+                            )
+                        })
+                        }
                     </tbody>
                 </table>
             </div>

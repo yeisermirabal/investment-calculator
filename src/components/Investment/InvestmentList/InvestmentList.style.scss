@@ -2,7 +2,7 @@
     width: 100%;    
     text-align: right;
     background: #262228;
-    box-shadow: 0px 5px 12.09px 0.91px rgba(0, 0, 0, 0.34);
+    box-shadow: 0 0.313rem 0.756rem 0.057rem rgba(0, 0, 0, 0.34);
     margin-bottom: 1.5rem;
     
 
@@ -14,6 +14,11 @@
 
     &--wrapper{
         overflow-x: auto;
+    }
+
+    &--empty {
+        text-align: center;
+        color: #cbcbcb;
     }
 
     th {
