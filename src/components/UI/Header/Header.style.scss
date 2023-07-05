@@ -4,9 +4,13 @@ header {
     svg {
       max-width: 100%;
       width: 20rem;
-      height: auto;
+      height: 20rem;
       object-fit: contain;
       background-color: transparent;
       color: #e4a101;
+
+      @media (max-width: 37.5rem) {
+        height: auto;
+      }
     }
 }
