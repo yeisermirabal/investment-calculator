@@ -1,48 +1,39 @@
-# investment-calculator
+# Investment Calculator App
 
-# Getting Started with Create React App
+This is a simple investment calculator application built with React. It allows users to input their investment details, such as current savings, yearly savings, expected interest rate, and investment duration. Based on these inputs, the app calculates and displays a yearly breakdown of the investment growth.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
+Input Form: Users can enter their investment details, including current savings, yearly savings, expected interest rate, and investment duration.
+Calculation Logic: The app uses the provided investment details to calculate the yearly growth of the investment using compound interest.
+Yearly Breakdown: The app displays a table showing the year-wise breakdown of the investment, including the yearly interest, total savings at the end of each year, and yearly contributions.
+Dynamic Updates: Whenever the user changes the investment details, the app automatically recalculates and updates the results.
 
-## Available Scripts
+## Usage
+To use this application, follow these steps:
 
-In the project directory, you can run:
+- Enter the investment details in the input form, including current savings, yearly savings, expected interest rate, and investment duration.
+- Click the "Calculate" button to save the investment data.
+- The app will calculate the investment growth and display a table showing the yearly breakdown.
+- To make changes to the investment details, modify the input form and click "Calculate" again. The app will recalculate and update the results accordingly.
 
-### `npm start`
+## Installation
+To run this application locally, follow these steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Ensure that you have Node.js installed on your machine.
+- Clone the repository or download the source code.
+- Open a terminal and navigate to the project directory.
+- Run the command npm install to install the dependencies.
+- Once the installation is complete, run the command npm start to start the application.
+- Open your web browser and visit http://localhost:3000 to view the application.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## Dependencies
+This application uses the following dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+React: A JavaScript library for building user interfaces.
+useState: A React hook for managing component state.
+useEffect: A React hook for handling side effects.
+SCSS: Custom SCSS styles for the application.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
+Contributions to this project are welcome. If you find any issues or would like to add new features, please open an issue or submit a pull request on the project repository.
