@@ -68,13 +68,13 @@ input {
             top:-0.75rem;            
             background: #e4a101;            
             transform: skew(-25deg, 0deg);
-            padding: 0.125rem 0.5rem;            
+            padding: 0.125rem 0.5rem; 
+            font-size: 0.75rem;
+            font-weight: 800; 
+            color: #1c1121;           
             span {
                 display: inline-block;
-                transform: skew(25deg, 0deg);
-                font-size: 0.75rem;
-                font-weight: 800; 
-                color: #1c1121;
+                transform: skew(25deg, 0deg);                
             }
         }
     }
